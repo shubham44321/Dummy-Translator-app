@@ -13,7 +13,7 @@ translateButton.addEventListener("click",async () => {
 });
 
 function appendtextToUrl(text){
-    return serverUrl+"?text="+text;
+    return serverUrl+"?text="+text.trim();
 }
 
 function errorHandler(ex){
