@@ -1,0 +1,23 @@
+.txt-transalte{
+    height: 30vh;
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem ;
+    resize: none;
+}
+
+.btn{
+    display: block;
+    margin: 1rem auto;
+}
+
+.div-output{
+    height: 20vh;
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem ;
+    resize: none;
+    border: 1px solid black;
+}
