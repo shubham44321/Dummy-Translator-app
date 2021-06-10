@@ -1,15 +1,26 @@
 const translateButton = document.querySelector("#btn-translate");
 const txtToTranslate = document.querySelector("#txt-to-translate");
 const translatedText = document.querySelector("#txt-translated"); 
-//const serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-const serverUrl = "https://api.funtranslations.com/translate/yoda.json";
+const clearButton = document.querySelector("#btn-clear"); 
+
+const serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+//const serverUrl = "https://api.funtranslations.com/translate/yoda.json";
 
 
 translateButton.addEventListener("click",async () => {
     let textToTranslate = txtToTranslate.value;
-    const transalted = await getData(textToTranslate);
-    translatedText.innerText = transalted;
-    //console.log(textToTranslate);
+    if(textToTranslate !== "" && textToTranslate.trim().length > 0){
+        const transalted = await getData(textToTranslate);
+        translatedText.innerText = transalted;
+    }
+    else{
+        alert("Please enter text to be translated.")
+    }
+});
+
+clearButton.addEventListener("click",() => {
+    txtToTranslate.value = "";
+    translatedText.innerText = "";
 });
 
 function appendtextToUrl(text){
