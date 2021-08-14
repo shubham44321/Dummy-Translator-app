@@ -3,8 +3,8 @@ const txtToTranslate = document.querySelector("#txt-to-translate");
 const translatedText = document.querySelector("#txt-translated"); 
 const clearButton = document.querySelector("#btn-clear"); 
 
-const serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-//const serverUrl = "https://api.funtranslations.com/translate/yoda.json";
+//const serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+const serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
 
 translateButton.addEventListener("click",async () => {
